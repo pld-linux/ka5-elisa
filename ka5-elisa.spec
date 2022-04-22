@@ -1,18 +1,19 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	21.12.3
+%define		kdeappsver	22.04.0
 %define		kframever	5.83.0
 %define		qtver		5.9.0
 %define		kaname		elisa
+######		Unknown group!
 Summary:	Elisa music player
 Name:		ka5-%{kaname}
-Version:	21.12.3
+Version:	22.04.0
 Release:	1
 License:	LGPL v3+
 Group:		Multimedia
 Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	4de19d8f0de9eb2937c7cf3a29ac5dbf
+# Source0-md5:	e1bf990d68badb51923f5834d0e0fe69
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Concurrent-devel >= 5.15.2
 BuildRequires:	Qt5Core-devel >= %{qtver}
@@ -22,8 +23,8 @@ BuildRequires:	Qt5Gui-devel >= 5.15.2
 BuildRequires:	Qt5Multimedia-devel
 BuildRequires:	Qt5Network-devel >= 5.15.2
 BuildRequires:	Qt5Qml-devel
-BuildRequires:	Qt5Quick-devel >= 5.15.2
 BuildRequires:	Qt5Quick-controls2-devel >= 5.15.0
+BuildRequires:	Qt5Quick-devel >= 5.15.2
 BuildRequires:	Qt5Sql-devel
 BuildRequires:	Qt5Svg-devel
 BuildRequires:	Qt5Test-devel
@@ -51,10 +52,10 @@ BuildRequires:	kf5-kio-devel >= 5.85.0
 BuildRequires:	kf5-kirigami2-devel >= 5.85.0
 BuildRequires:	kf5-kitemviews-devel >= 5.92.0
 BuildRequires:	kf5-kjobwidgets-devel >= 5.92.0
-BuildRequires:	kf5-kxmlgui-devel >= 5.92.0
 BuildRequires:	kf5-kpackage-devel >= 5.85.0
 BuildRequires:	kf5-kservice-devel >= 5.92.0
 BuildRequires:	kf5-kwidgetsaddons-devel >= 5.92.0
+BuildRequires:	kf5-kxmlgui-devel >= 5.92.0
 BuildRequires:	kf5-solid-devel >= 5.92.0
 BuildRequires:	ninja
 BuildRequires:	pkgconfig
@@ -94,6 +95,7 @@ cd build
 ctest
 %endif
 
+
 %install
 rm -rf $RPM_BUILD_ROOT
 %ninja_install -C build
@@ -126,3 +128,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/hicolor/scalable/apps/elisa.svg
 %{_datadir}/metainfo/org.kde.elisa.appdata.xml
 %{_datadir}/qlogging-categories5/elisa.categories
+%{_datadir}/dbus-1/services/org.kde.elisa.service
