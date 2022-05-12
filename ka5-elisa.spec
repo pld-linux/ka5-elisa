@@ -1,19 +1,19 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	22.04.0
+%define		kdeappsver	22.04.1
 %define		kframever	5.83.0
 %define		qtver		5.9.0
 %define		kaname		elisa
 ######		Unknown group!
 Summary:	Elisa music player
 Name:		ka5-%{kaname}
-Version:	22.04.0
+Version:	22.04.1
 Release:	1
 License:	LGPL v3+
 Group:		Multimedia
 Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	e1bf990d68badb51923f5834d0e0fe69
+# Source0-md5:	2f1549588f09135034a60ccedbaca63f
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Concurrent-devel >= 5.15.2
 BuildRequires:	Qt5Core-devel >= %{qtver}
