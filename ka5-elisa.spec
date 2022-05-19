@@ -9,7 +9,8 @@
 Summary:	Elisa music player
 Name:		ka5-%{kaname}
 Version:	22.04.1
-Release:	2222222222222222222222oup:		Multimedia
+Release:	2
+Group:		Multimedia
 Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
 # Source0-md5:	2f1549588f09135034a60ccedbaca63f
 URL:		http://www.kde.org/
