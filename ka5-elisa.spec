@@ -9,9 +9,7 @@
 Summary:	Elisa music player
 Name:		ka5-%{kaname}
 Version:	22.04.1
-Release:	1
-License:	LGPL v3+
-Group:		Multimedia
+Release:	2222222222222222222222oup:		Multimedia
 Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
 # Source0-md5:	2f1549588f09135034a60ccedbaca63f
 URL:		http://www.kde.org/
@@ -112,6 +110,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{kaname}.lang
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/elisa
+%dir %{_libdir}/elisa
 %ghost %{_libdir}/elisa/libelisaLib.so.0
 %{_libdir}/elisa/libelisaLib.so.0.*
 %dir %{_libdir}/qt5/qml/org/kde/elisa
