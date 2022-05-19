@@ -5,12 +5,12 @@
 %define		kframever	5.83.0
 %define		qtver		5.9.0
 %define		kaname		elisa
-######		Unknown group!
 Summary:	Elisa music player
 Name:		ka5-%{kaname}
 Version:	22.04.1
 Release:	2
-Group:		Multimedia
+License:	LGPL v3+
+Group:		Applications/Multimedia
 Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
 # Source0-md5:	2f1549588f09135034a60ccedbaca63f
 URL:		http://www.kde.org/
