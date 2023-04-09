@@ -8,7 +8,7 @@
 Summary:	Elisa music player
 Name:		ka5-%{kaname}
 Version:	22.12.3
-Release:	2
+Release:	3
 License:	LGPL v3+
 Group:		Applications/Multimedia
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
