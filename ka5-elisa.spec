@@ -1,65 +1,64 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	23.08.4
+%define		kdeappsver	24.01.95
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		elisa
 Summary:	Elisa music player
 Name:		ka5-%{kaname}
-Version:	23.08.4
-Release:	1
+Version:	24.01.95
+Release:	0.1
 License:	LGPL v3+
 Group:		Applications/Multimedia
-Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	3f6f69f9dc649c0bbef2ebbd776cb853
+Source0:	https://download.kde.org/unstable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
+# Source0-md5:	c2289cd7c70782d124e4e54087c36b2a
 URL:		http://www.kde.org/
-BuildRequires:	Qt5Concurrent-devel >= 5.15.2
-BuildRequires:	Qt5Core-devel >= %{qtver}
-BuildRequires:	Qt5Core-devel >= 5.15.2
-BuildRequires:	Qt5DBus-devel >= 5.15.2
-BuildRequires:	Qt5Gui-devel >= 5.15.2
-BuildRequires:	Qt5Multimedia-devel
-BuildRequires:	Qt5Network-devel >= 5.15.2
-BuildRequires:	Qt5Qml-devel
-BuildRequires:	Qt5Quick-controls2-devel >= 5.15.0
-BuildRequires:	Qt5Quick-devel >= 5.15.2
-BuildRequires:	Qt5Sql-devel
-BuildRequires:	Qt5Svg-devel
-BuildRequires:	Qt5Test-devel
-BuildRequires:	Qt5Widgets-devel >= 5.15.2
+BuildRequires:	Qt6Concurrent-devel >= 5.15.2
+BuildRequires:	Qt6Core-devel >= %{qtver}
+BuildRequires:	Qt6Core-devel >= 5.15.2
+BuildRequires:	Qt6DBus-devel >= 5.15.2
+BuildRequires:	Qt6Gui-devel >= 5.15.2
+BuildRequires:	Qt6Multimedia-devel
+BuildRequires:	Qt6Network-devel >= 5.15.2
+BuildRequires:	Qt6Qml-devel
+BuildRequires:	Qt6Quick-devel >= 5.15.2
+BuildRequires:	Qt6Sql-devel
+BuildRequires:	Qt6Svg-devel
+BuildRequires:	Qt6Test-devel
+BuildRequires:	Qt6Widgets-devel >= 5.15.2
 BuildRequires:	cmake >= 3.20
 BuildRequires:	fontconfig-devel
 BuildRequires:	freetype-devel
 BuildRequires:	gettext-devel
-BuildRequires:	kf5-baloo-devel >= 5.85.0
-BuildRequires:	kf5-extra-cmake-modules >= 5.85.0
-BuildRequires:	kf5-kauth-devel >= 5.92.0
-BuildRequires:	kf5-kcodecs-devel >= 5.92.0
-BuildRequires:	kf5-kcompletion-devel >= 5.92.0
-BuildRequires:	kf5-kconfig-devel >= 5.92.0
-BuildRequires:	kf5-kconfigwidgets-devel >= 5.92.0
-BuildRequires:	kf5-kcoreaddons-devel >= 5.92.0
-BuildRequires:	kf5-kcrash-devel >= 5.85.0
-BuildRequires:	kf5-kdbusaddons-devel >= 5.85.0
-BuildRequires:	kf5-kdeclarative-devel >= 5.85.0
-BuildRequires:	kf5-kdoctools-devel >= 5.85.0
-BuildRequires:	kf5-kfilemetadata-devel >= 5.85.0
-BuildRequires:	kf5-ki18n-devel >= 5.85.0
-BuildRequires:	kf5-kiconthemes-devel >= 5.85.0
-BuildRequires:	kf5-kio-devel >= 5.85.0
-BuildRequires:	kf5-kirigami2-devel >= 5.85.0
-BuildRequires:	kf5-kitemviews-devel >= 5.92.0
-BuildRequires:	kf5-kjobwidgets-devel >= 5.92.0
-BuildRequires:	kf5-kpackage-devel >= 5.85.0
-BuildRequires:	kf5-kservice-devel >= 5.92.0
-BuildRequires:	kf5-kwidgetsaddons-devel >= 5.92.0
-BuildRequires:	kf5-kxmlgui-devel >= 5.92.0
-BuildRequires:	kf5-solid-devel >= 5.92.0
+BuildRequires:	kf6-baloo-devel >= 5.85.0
+BuildRequires:	kf6-extra-cmake-modules >= 5.85.0
+BuildRequires:	kf6-kauth-devel >= 5.92.0
+BuildRequires:	kf6-kcodecs-devel >= 5.92.0
+BuildRequires:	kf6-kcompletion-devel >= 5.92.0
+BuildRequires:	kf6-kconfig-devel >= 5.92.0
+BuildRequires:	kf6-kconfigwidgets-devel >= 5.92.0
+BuildRequires:	kf6-kcoreaddons-devel >= 5.92.0
+BuildRequires:	kf6-kcrash-devel >= 5.85.0
+BuildRequires:	kf6-kdbusaddons-devel >= 5.85.0
+BuildRequires:	kf6-kdeclarative-devel >= 5.85.0
+BuildRequires:	kf6-kdoctools-devel >= 5.85.0
+BuildRequires:	kf6-kfilemetadata-devel >= 5.85.0
+BuildRequires:	kf6-ki18n-devel >= 5.85.0
+BuildRequires:	kf6-kiconthemes-devel >= 5.85.0
+BuildRequires:	kf6-kio-devel >= 5.85.0
+BuildRequires:	kf6-kirigami-devel >= 5.85.0
+BuildRequires:	kf6-kitemviews-devel >= 5.92.0
+BuildRequires:	kf6-kjobwidgets-devel >= 5.92.0
+BuildRequires:	kf6-kpackage-devel >= 5.85.0
+BuildRequires:	kf6-kservice-devel >= 5.92.0
+BuildRequires:	kf6-kwidgetsaddons-devel >= 5.92.0
+BuildRequires:	kf6-kxmlgui-devel >= 5.92.0
+BuildRequires:	kf6-solid-devel >= 5.92.0
 BuildRequires:	ninja
 BuildRequires:	pkgconfig
-BuildRequires:	qt5-build >= %{qtver}
-BuildRequires:	qt5-phonon-devel
+BuildRequires:	qt6-build >= %{qtver}
+BuildRequires:	qt6-phonon-devel
 BuildRequires:	rpmbuild(macros) >= 1.164
 BuildRequires:	shared-mime-info
 BuildRequires:	tar >= 1:1.22
@@ -109,14 +108,14 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{kaname}.lang
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/elisa
-%dir %{_libdir}/elisa
 %ghost %{_libdir}/elisa/libelisaLib.so.0
-%{_libdir}/elisa/libelisaLib.so.0.*
-%dir %{_libdir}/qt5/qml/org/kde/elisa
-%{_libdir}/qt5/qml/org/kde/elisa/libelisaqmlplugin.so
-%{_libdir}/qt5/qml/org/kde/elisa/plugins.qmltypes
-%{_libdir}/qt5/qml/org/kde/elisa/qmldir
+%attr(755,root,root) %{_libdir}/elisa/libelisaLib.so.0.1
+%dir %{_libdir}/qt6/qml/org/kde/elisa
+%attr(755,root,root) %{_libdir}/qt6/qml/org/kde/elisa/libelisaqmlplugin.so
+%{_libdir}/qt6/qml/org/kde/elisa/plugins.qmltypes
+%{_libdir}/qt6/qml/org/kde/elisa/qmldir
 %{_desktopdir}/org.kde.elisa.desktop
+%{_datadir}/dbus-1/services/org.kde.elisa.service
 %{_iconsdir}/hicolor/128x128/apps/elisa.png
 %{_iconsdir}/hicolor/16x16/apps/elisa.png
 %{_iconsdir}/hicolor/22x22/apps/elisa.png
@@ -124,6 +123,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/hicolor/48x48/apps/elisa.png
 %{_iconsdir}/hicolor/64x64/apps/elisa.png
 %{_iconsdir}/hicolor/scalable/apps/elisa.svg
+%{_localedir}/bs/LC_MESSAGES/elisa.mo
 %{_datadir}/metainfo/org.kde.elisa.appdata.xml
-%{_datadir}/qlogging-categories5/elisa.categories
-%{_datadir}/dbus-1/services/org.kde.elisa.service
+%{_datadir}/qlogging-categories6/elisa.categories
